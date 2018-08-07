@@ -8,7 +8,7 @@
 	--h3-color: #6e747c;
 	--footer-color: #121212;
 	--input-search-color: #ddeaf0;
-	--footer-main-color: #ddeaf0;
+	--footer-main-color: #8e8e8e;
 }
 /* End Variables */
 
@@ -52,6 +52,9 @@
 }
 h3{
 	color: var(--h3-color);
+}
+a{
+	text-decoration: none;
 }
 header{
 	background-color: var(--primary-color);
@@ -346,6 +349,20 @@ footer .top-footer .form-top-footer button{
 }
 footer .bottom-footer{
 	color: var(--footer-main-color);
-	padding-top: 40px
+	padding-top: 40px;
+}
+footer ul.list-left{
+
+}
+footer ul.list-left li{
+	background: none !important;
+}
+footer ul.list-left li a{
+	background: none !important;
+	color: var(--footer-main-color);
+}
+footer ul.list-left li a:hover{
+	color: var(--theird-color) !important;
+	text-decoration: none !important;
 }
 /* End footer */
