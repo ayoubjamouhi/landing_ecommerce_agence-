@@ -6,6 +6,9 @@
 	--fourty-color: #444d4ccf;
 	--search-color: #5b57555c;
 	--h3-color: #6e747c;
+	--footer-color: #121212;
+	--input-search-color: #ddeaf0;
+	--footer-main-color: #ddeaf0;
 }
 /* End Variables */
 
@@ -20,6 +23,7 @@
 /* End  Fonts */
 
 /* Start Override Bootstrap */
+
 .bg-light{
 	background:none !important;
 }
@@ -52,7 +56,9 @@ h3{
 header{
 	background-color: var(--primary-color);
 	min-height: 120px;
-
+	/*position: fixed;*/
+/*	width: 100%;
+	z-index: 99*/
 }
 header section.top-header{
 	
@@ -183,8 +189,10 @@ main section.search .search-tab .box-bottom-info-content2 {
     padding: 10px;
     display: none;
 }
+/*Start Coups de coeur*/
 main section.coups-de-coeur{
-	padding-top: 20px
+	padding-top: 20px;
+	padding-bottom: 20px
 }
 main section.coups-de-coeur h3{
 	text-transform: uppercase;
@@ -225,7 +233,6 @@ main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix{
 	background-color: #ccc;
 	text-align: center;
 	text-transform: uppercase;
-
 }
 main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span{
 	color: var(--theird-color);
@@ -237,11 +244,108 @@ main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span
 main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span.dh{
 
 }
+/* Start Coups de coeur */
+/* Start meilleurs ventes */
+main section.meilleurs-ventes{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f4f1f1
+}
+main section.meilleurs-ventes h3{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 40px
+}  
+main section.meilleurs-ventes .ventes-items{
+
+}
+main section.meilleurs-ventes .ventes-items .ventes-row{
+	position: relative
+}
+main section.meilleurs-ventes .ventes-items .ventes-row a{
+	text-decoration: none
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .image{
+	width: 100%
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .image img{
+	width: 100%
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .titre{
+	position: absolute;
+	bottom: 57px;
+	left: 47px;
+	color: var(--secondary-color);
+	font-size: 23px;
+	text-transform: uppercase;
+	font-weight: bold
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .titre:hover{
+	background-color: --var(--theird-color)
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .prix{
+	padding:4px;
+	color: var(--fourty-color);
+	background-color: #ccc;
+	text-align: center;
+	text-transform: uppercase;
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .prix span{
+	color: var(--theird-color);
+
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .prix span.number{
+	font-size: 31px
+}
+main section.meilleurs-ventes .ventes-items .ventes-row .prix span.dh{
+
+}
+/* End meilleurs ventes */
 /* End main */
 
 /* Start footer */
 footer{
-	background-color: yellow;
-	min-height: 563px
+	background-color: var(--footer-color);
+	min-height: 563px;
+}
+footer .top-footer{
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	padding: 10px 0
+}
+footer .top-footer .charte{
+	color: var(--theird-color);
+}
+footer .top-footer .form-top-footer{
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	padding: 10px 0;
+	position: relative;
+	float: right;
+}
+footer .top-footer .form-top-footer .input-top-footer{
+	
+}
+footer .top-footer .form-top-footer .input-top-footer input[type="text"]{
+	min-height: 48px;
+	background-color: var(--fourty-color);
+	border: 0;
+	border-radius: 8px;
+	min-width: 300px;
+	color: var(--input-search-color)
+}
+footer .top-footer .form-top-footer button{
+	border-radius: 50%;
+	position: absolute;
+	right: 18px;
+	top: 15px;
+	background-color: var(--footer-color);
+	border: 0;
+	color: var(--theird-color);
+}
+footer .bottom-footer{
+	color: var(--footer-main-color);
+	padding-top: 40px
 }
 /* End footer */
