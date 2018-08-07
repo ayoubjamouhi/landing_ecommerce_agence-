@@ -58,9 +58,8 @@ a{
 }
 header{
 	background-color: var(--primary-color);
-	min-height: 120px;
-	/*position: fixed;*/
-/*	width: 100%;
+	/*position: fixed;
+	width: 100%;
 	z-index: 99*/
 }
 header section.top-header{
@@ -76,16 +75,17 @@ header section.bottom-header{
 	overflow: hidden;
 }
 header section.bottom-header .logo{
-	width: 13%;
+	width: 25%;
 	float: left;
 }
 header section.bottom-header .logo img{
 	max-height: 113px;
-	width: 100%;
+	width: 62%;
 	height: 100%;
+	float: right;
 }
 header section.bottom-header nav{
-	width: 77%;
+	width: 75%;
 	float: left
 }
 header section.bottom-header nav .list-navbar{
@@ -102,11 +102,9 @@ header section.bottom-header nav .list-navbar li a{
 /* Start main */
 main{
 	background-color: var(--secondary-color);
-	min-height: 1500px;
 }
 main section.search{
-	height: 544px;
-	padding:30px;
+	padding:100px 30px;
 	background: url("../images/sea-1337565.jpg");
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -195,7 +193,7 @@ main section.search .search-tab .box-bottom-info-content2 {
 /*Start Coups de coeur*/
 main section.coups-de-coeur{
 	padding-top: 20px;
-	padding-bottom: 20px
+	padding-bottom: 60px
 }
 main section.coups-de-coeur h3{
 	text-transform: uppercase;
@@ -251,7 +249,7 @@ main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span
 /* Start meilleurs ventes */
 main section.meilleurs-ventes{
 	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 100px;
 	background-color: #f4f1f1
 }
 main section.meilleurs-ventes h3{
@@ -273,7 +271,8 @@ main section.meilleurs-ventes .ventes-items .ventes-row .image{
 	width: 100%
 }
 main section.meilleurs-ventes .ventes-items .ventes-row .image img{
-	width: 100%
+	width: 100%;
+	min-height: 200px
 }
 main section.meilleurs-ventes .ventes-items .ventes-row .titre{
 	position: absolute;
@@ -310,7 +309,6 @@ main section.meilleurs-ventes .ventes-items .ventes-row .prix span.dh{
 /* Start footer */
 footer{
 	background-color: var(--footer-color);
-	min-height: 563px;
 }
 footer .top-footer{
 	background-color: var(--primary-color);
@@ -351,18 +349,58 @@ footer .bottom-footer{
 	color: var(--footer-main-color);
 	padding-top: 40px;
 }
-footer ul.list-left{
+footer .bottom-footer ul.list-left{
 
 }
-footer ul.list-left li{
+footer .bottom-footer ul.list-left li{
 	background: none !important;
 }
-footer ul.list-left li a{
+footer .bottom-footer ul.list-left li a{
 	background: none !important;
 	color: var(--footer-main-color);
 }
-footer ul.list-left li a:hover{
+footer .bottom-footer ul.list-left li a:hover{
 	color: var(--theird-color) !important;
 	text-decoration: none !important;
 }
+footer .bottom-footer ul.social-box{
+
+}
+footer .bottom-footer ul.social-box li{
+
+}
+footer .bottom-footer ul.social-box li a{
+	color: var(--footer-main-color);
+	transition: color 1s linear;
+}
+footer .bottom-footer ul.social-box li a:hover{
+	color: var(--secondary-color)
+}
 /* End footer */
+
+
+/* Responsive Mobile 320px*/
+@media (max-width: 575.98px) {
+	/* STart Boostrap */
+	.navbar-light .navbar-nav .nav-link{
+		line-height: 50px;
+		text-align: center
+	}
+	/* End Boostrap */
+	header section.top-header .top-bar{
+		display: none;
+	}
+	header section.bottom-header .logo{
+		float: right;
+	}
+	header section.bottom-header .logo img{
+		width: 100%
+	}
+	header section.bottom-header nav{
+		float: right;
+		width: 100%
+	}
+	main section.search .search-tab form button{
+
+	}
+}
