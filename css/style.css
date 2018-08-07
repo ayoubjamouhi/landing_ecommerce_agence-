@@ -40,7 +40,11 @@
 *{
 	font-family: "robotoregular", "Arial";
 	padding: 0;
-	margin: 0
+	margin: 0;
+
+}
+::selection {
+  background: var(--theird-color)
 }
 header{
 	background-color: var(--primary-color);
@@ -160,6 +164,16 @@ main section.search .search-tab .box-bottom-info-content1 .column1{
     grid-template-columns: 3fr 1fr 1fr;
     grid-gap: 6px;
     margin-bottom: 6px;
+}
+main section.search .search-tab .box-bottom-info-content1 form {
+
+}
+main section.search .search-tab form button{
+	background-color: var(--fourty-color);
+	border: 0;
+}
+main section.search .search-tab form button:hover{
+	background-color: var(--theird-color)
 }
 main section.search .search-tab .box-bottom-info-content2 {
     border: 1px solid #CCC;

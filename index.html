@@ -58,7 +58,7 @@
                     <a class="nav-link" href="#">Nos agences</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">  080 200 2020</a>
+                    <a class="nav-link" href="#"><i class="fas fa-phone-volume"></i>  080 200 2020</a>
                   </li>
                 </ul>
                 
@@ -75,12 +75,12 @@
         <div class="container">
             <div class="search-tab">
                 <input id="tab1" type="radio" name="tabs" checked>
-                <label class="label" for="tab1">Informations</label>
+                <label class="label" for="tab1"><i class="fas fa-hotel"></i>  Hôtels</label>
 
                 <input id="tab2" type="radio" name="tabs">
-                <label class="label" for="tab2">Documents</label> 
+                <label class="label" for="tab2"><i class="fas fa-plane"></i>  Vols</label> 
                 <div class="box-bottom-info-content1" id="content1">
-                    <form class="needs-validation" novalidate>
+                    <form>
                         <div class="form-row">
                             <div class="col-md-4 mb-3">
                               <label for="validationCustom01">Destination</label>
@@ -134,10 +134,65 @@
                               </select>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">Recherche</button>
                     </form>
                 </div>
-                <div class="box-bottom-info-content2" id="content2">b</div>   
+                <div class="box-bottom-info-content2" id="content2">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-3 mb-3">
+                              <label for="validationCustom01">Au départ de</label>
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="Ville ou aéroport...">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="validationCustom01">À destination de</label>
+                              <input type="text" class="form-control" id="validationCustom01" placeholder="Ville ou aéroport...">
+                            </div>
+                            <div class="col-md-2 mb-3">
+                              <label for="validationCustom01">Date de départ</label>
+                              <input type="date" class="form-control" id="validationCustom01" placeholder="Ville...">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-3 mb-3">
+                              <label for="validationCustom01">Adultes (18+)</label>
+                              <select type="text" class="form-control" id="validationCustom01" placeholder="Ville...">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                              </select>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                              <label for="validationCustom01">Enfants (0-17)</label>
+                              <select type="text" class="form-control" id="validationCustom01" placeholder="Ville...">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-2 mb-3">
+                              <label for="validationCustom01">Classe souhaitée</label>
+                              <select class="form-control" id="validationCustom01" placeholder="Ville...">
+                                  <option disabled="">Cabine...</option>
+                                  <option>Indifferent</option>
+                                  <option>Economique</option>
+                                  <option>Business</option>
+                                  <option>First Class</option>
+                              </select>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Recherche</button>
+                    </form>
+                </div>   
             </div>
             
         </div>
