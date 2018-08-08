@@ -401,6 +401,40 @@ footer .bottom-footer ul.social-box li a:hover{
 		width: 100%
 	}
 	main section.search .search-tab form button{
+		display: block;
+		margin: auto;
+	}
+	main section.search .search-tab label{
+		text-align: center;
+		display: block;
+	}
+	main section.coups-de-coeur h3{
+		text-align: center
+	}
+	main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row{
+		margin-bottom: 5px;
+	}
+	main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .titre{
+		font-size: 21px
+	}
+	main section.meilleurs-ventes h3{
+		text-align: center;
+		font-size: 19px;
+	}
+	main section.meilleurs-ventes .ventes-items .ventes-row{
+		margin-bottom: 5px
+	}
+	main section.meilleurs-ventes .ventes-items .ventes-row .titre{
+		font-size: 21px
+	}
+	footer section.top-footer h4{
+		text-align: center
+	}
+}
 
+@media (max-width: 991.98px) {
+
+	.navbar-light .navbar-nav .nav-link{
+		line-height: 47px
 	}
 }
