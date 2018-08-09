@@ -1,21 +1,19 @@
-@import url("helpers.css")
+@import url("helpers.css");
 
-/* Start main */
 main{
 	background-color: var(--secondary-color);
+	section.search{
+		padding:100px 30px;
+		background: url("../images/sea-1337565.jpg");
+		background-repeat: no-repeat;
+		background-size: auto;
+		.search-tab{
+			background-color: var(--search-color);
+			color: var(--secondary-color);
+		}
+	}
 }
-main section.search{
-	padding:100px 30px;
-	background: url("../images/sea-1337565.jpg");
-	background-repeat: no-repeat;
-	background-size: auto;
-}
-main section.search .search-tab{
-	background-color: var(--search-color);
-	color: var(--secondary-color);
-	/*border-top-left-radius: 17px;*/
-	/*border-top-right-radius: 17px;*/
-}
+
 main section.search .search-tab input[type=radio] {
   display: none;
 }
@@ -206,6 +204,9 @@ main section.meilleurs-ventes .ventes-items .ventes-row .prix span.dh{
 }
 /* End meilleurs ventes */
 /* End main */
+
+
+
 
 /* Responsive Mobile */
 @media (max-width: 575.98px) {

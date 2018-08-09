@@ -5,11 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync": "browser-sync start --server --files=\"css/*.css, *.html\" "
+    "sync": "browser-sync start --server --files=\"css/*.css, *.html\" ",
+    "watch": "npx webpack --watch --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "ajax-promise-functions": "^0.0.1",
+    "path": "^0.12.7",
+    "sweetalert": "^2.1.0"
+  },
   "devDependencies": {
-    "browser-sync": "^2.24.6"
+    "browser-sync": "^2.24.6",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.4"
   }
 }

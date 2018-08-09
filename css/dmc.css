@@ -1,0 +1,19 @@
+@import url("helpers.css");
+/* Boostrap */
+.container-fluid{
+  width: 83%;
+}
+/* Boostrap */
+
+/* Start Main */
+main{
+
+}
+main .top-main{
+  background: url("../images/sea-1337565.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;  
+}
+/* End Main */
+
+/*# sourceMappingURL=apropos.css.map */
