@@ -3,10 +3,12 @@ main {
   background-color: var(--secondary-color);
 }
 main section.search {
-  padding: 100px 30px;
-  background: url("../images/sea-1337565.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  padding: 29px 30px;
+  background: url("../images/plane-841441.jpg");
+  background-repeat: repeat;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  background-size: cover; 
 }
 main section.search .search-tab {
   background-color: var(--search-color);
@@ -24,11 +26,12 @@ main section.search .search-tab .label {
   font-weight: 600;
   text-align: center;
   color: var(--secondary-color);
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
 
 main section.search .search-tab .label i {
-  color: var(--search-color);
+  color: var(--secondary-color);
 }
 
 main section.search .search-tab label {
@@ -41,10 +44,10 @@ main section.search .search-tab label:hover {
 }
 
 main section.search .search-tab input:checked + label {
-  border: 1px solid #ddd;
-  border-bottom: 1px solid #fff;
+  border: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   color: var(--secondary-color);
-  background-color: var(--theird-color);
+  background-color: var(--primary-color);
   padding: 11px 78px;
   /*border-top-left-radius: 17px*/
 }
@@ -58,7 +61,7 @@ main section.search .search-tab input:checked + label {
 }
 
 main section.search .search-tab .box-bottom-info-content1 {
-  border: 1px solid #CCC;
+  /*border: 1px solid #CCC;*/
   padding: 10px;
   display: none;
 }
@@ -84,13 +87,18 @@ main section.search .search-tab form button {
 main section.search .search-tab form button:hover {
   background-color: var(--theird-color);
 }
-
 main section.search .search-tab .box-bottom-info-content2 {
-  border: 1px solid #CCC;
+  /*border: 1px soli d #CCC;*/
   padding: 10px;
   display: none;
 }
-
+main section.search form input,main section.search form select{
+  border-radius: 0;
+  border: 0;
+}
+main section.search form input[type="date"], main section.search form select{
+  padding-bottom: 4px;
+}
 /*Start Coups de coeur*/
 main section.coups-de-coeur {
   padding-top: 20px;
@@ -143,11 +151,12 @@ main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix {
 }
 
 main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span {
-  color: var(--theird-color);
+  color: var(--header-color);
 }
 
 main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .prix span.number {
   font-size: 31px;
+  font-weight: bold
 }
 
 /* Start Coups de coeur */
@@ -187,7 +196,7 @@ main section.meilleurs-ventes .ventes-items .ventes-row .titre {
   bottom: 57px;
   left: 47px;
   color: var(--secondary-color);
-  font-size: 23px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -205,11 +214,12 @@ main section.meilleurs-ventes .ventes-items .ventes-row .prix {
 }
 
 main section.meilleurs-ventes .ventes-items .ventes-row .prix span {
-  color: var(--theird-color);
+  color: var(--header-color);
 }
 
 main section.meilleurs-ventes .ventes-items .ventes-row .prix span.number {
   font-size: 31px;
+  font-weight: bold
 }
 
 /* End meilleurs ventes */
