@@ -70,7 +70,7 @@
 <!-- Start Main -->
 <main>
   <section class="search">
-      <div class="container">
+      <div class="container-fluid">
           <div class="search-tab">
               <input id="tab1" type="radio" name="tabs" checked>
               <label class="label" for="tab1"><i class="fas fa-hotel"></i>  Hôtels</label>
@@ -193,13 +193,13 @@
                       <button class="btn btn-primary" type="submit">Recherche</button>
                   </form>
               </div>   
-          </div>
-          
+          </div>   
       </div>
   </section>
   <section class="list">
-    <div class="container">
+    <div class="container-fluid">
     <div class="row">
+        <!-- left -->
         <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1 search-bar">
           <div class="affiner">
             <h3><i class="fas fa-search"></i> affiner votre recherche</h3>
@@ -210,7 +210,7 @@
             </div>
             <form action="">
               <div class="input-group">
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <input type="text" class="form-control" placeholder="Choisir un établissement">
                 <div class="input-group-append">
                   <span class="input-group-text"><i class="fas fa-search"></i> </span>
                 </div>
@@ -219,33 +219,218 @@
             
           </div>
           <div class="prix">
-            prix
+            <div class="top">
+              prix
+            </div>
+            <div class="slider-range">
+              prix
+            </div>
           </div>
           <div class="etoile">
-            étoiles
+            <div class="top">
+              prix
+            </div>
+            <div class="stars">
+              <div class="start-5">
+                <input type="checkbox" name="" checked>
+                <label>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </label>
+              </div>
+              <div class="start-4">
+                <input type="checkbox" name="">
+                <label>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </label>
+              </div>
+              <div class="start-3">
+                <input type="checkbox" name="">
+                <label>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </label>
+              </div>
+              <div class="start-2">
+                <input type="checkbox" name="">
+                <label>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </label>
+              </div>
+              <div class="start-1">
+                <input type="checkbox" name="">
+                <label>
+                  <i class="fas fa-star"></i>
+                </label>
+              </div>
+              <div class="autre">
+                <input type="checkbox" name="">
+                <label>Auberge</label>
+              </div>
+              <div class="autre">
+                <input type="checkbox" name="">
+                <label>Autres</label>
+              </div>
+              <div class="autre">
+                <input type="checkbox" name="">
+                <label>-1*</label>
+              </div>
+            </div>
           </div>
           <div class="favoris">
-            favoris
+            <div class="top">
+              favoris
+            </div>
+            <div class="bottom">
+                <input type="checkbox" name="" >
+                <label>Mes hôtels favoris</label>
+            </div>
           </div>
           <div class="regime">
-            regime
+            <div class="top">
+              régime
+            </div>
+            <div class="types">
+              <div class="chambre">
+                <input type="checkbox" name="" checked>
+                <label>Chambre seule</label>
+              </div>
+              <div class="chambre">
+                <input type="checkbox" name="">
+                <label>Demi-pension</label>
+              </div>
+              <div class="chambre">
+                <input type="checkbox" name="">
+                <label>Pension compléte</label>
+              </div>
+              <div class="chambre">
+                <input type="checkbox" name="">
+                <label>Petit déjeuner</label>
+              </div>
+            </div>
           </div>
           <div class="situation">
-            situation
+            <div class="top">
+              situation
+            </div>
+            <div class="types">
+              <div class="coin">
+                <input type="checkbox" name="" checked>
+                <label>AlcalÃ¡ de Henares</label>
+              </div>
+              <div class="coin">
+                <input type="checkbox" name="">
+                <label>AlcalÃ¡ Norte</label>
+              </div>
+              <div class="coin">
+                <input type="checkbox" name="">
+                <label>Alcobendas</label>
+              </div>
+              <div class="coin">
+                <input type="checkbox" name="">
+                <label>Getafe</label>
+              </div>
+            </div>
           </div>
-          <div class="type-hebergement">
-            type-hebergement
+          <div class="hebergement">
+            <div class="top">
+              type d'hébergement
+            </div>
+            <div class="types">
+              <div class="coin">
+                <input type="checkbox" name="" checked>
+              </div>
+              <div class="coin">
+                <input type="checkbox" name="">
+              </div>
+              <div class="coin">
+                <input type="checkbox" name="">
+              </div>
+              <div class="coin">
+                <input type="checkbox" name="">
+              </div>
+            </div>
           </div>
           <div class="equipements">
-            equipements
+            <div class="top">
+              equipements
+            </div>
+            <div class="types">
+              
+            </div>
           </div>
         </div>
-        <div class="col-lg-8 col-md-3 col-sm-2 col-xs-1 list-hotel ">
+        <!-- right -->
+        <div class="col-lg-8 col-md-3 col-sm-2 col-xs-1 list-hotel">
           <div class="trier">
-            trier
+            <div class="row"> 
+                <span class="col-lg-6 col-md-6 col-sm-2 col-xs-1 etablissement">
+                  1492 établissements correspondant à votre recherche
+                </span>
+                <div class="col-lg-4 col-md-6 col-sm-2 col-xs-1 trier-select">
+                  <span>trier</span>
+                  <select>
+                    <option>trier</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-2 col-xs-1 bars">
+                  <a href="#"><i class="fas fa-bars bar-hor"></i></a>
+                  <a href="#"><i class="fas fa-bars bar-point"></i></a>
+                  <a href="#"><i class="fas fa-map-marker-alt maps"></i></a>
+                </div>
+            </div>
           </div>
           <div class="hotel">
-            hotel
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-2 col-xs-1 left">
+                <img class="img-thumbnail" src="images/MAD-MEL-2.jpg">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-2 col-xs-1 center">
+                <h1>titre</h1>
+                <div class="etoile">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="map"><i class="fas fa-map-marker-alt"></i></span>
+                <div class="row info-room">
+                  <div class="col-lg-5 col-md-6 col-sm-2 col-xs-1 left">
+                    <i class="fas fa-bars bar-hor"></i>
+                    <span>the level room</span>
+                  </div>
+                  <div class="col-lg-5 col-md-6 col-sm-2 col-xs-1 offset-lg-1 left">
+                    <i class="fas fa-bars bar-hor"></i>
+                    <span>the level room</span>
+                  </div>
+                </div>
+                <div class="adresse">
+                  C/ PRINCESA, 27
+                </div>
+                <div class="bookmarks">
+                  <span>LIKE & SHARE</span>
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-instagram"></i>
+                </div>                                                            
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-2 col-xs-1 right">
+                <div class="inside">
+                  <span class="prix">1 818 Dh</span>
+                  <span class="prix-pour">Prix pour nuit</span>
+                  <button>allons y!</button>
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>  
     </div>
