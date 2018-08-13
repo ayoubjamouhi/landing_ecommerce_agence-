@@ -114,7 +114,7 @@ main section.list .search-bar{
 }
 main section.list .search-bar .affiner{
   background-color: var(--primary-color);
-  padding: 5px 5px;
+  padding: 29px 5px;
 }
 main section.list .search-bar .affiner h3{
   color: #FFF;
@@ -127,7 +127,7 @@ main section.list .search-bar .recherche-hotel{
   background-color: var(--secondary-color)
 }
 main section.list .search-bar .recherche-hotel .top{
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: var(--pleinciel-liste-top-color);
   text-transform: uppercase;
   color: var(--footer-color);
