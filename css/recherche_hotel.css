@@ -16,57 +16,12 @@ main section.search .search-tab {
   color: var(--secondary-color);
 }
 
-main section.search .search-tab input[type=radio] {
-  display: none;
-}
-
-main section.search .search-tab .label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 11px 78px;
-  font-weight: 600;
-  text-align: center;
-  color: var(--secondary-color);
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-}
-
-main section.search .search-tab .label i {
-  color: var(--secondary-color);
-}
-
-main section.search .search-tab label {
-  text-transform: uppercase;
-}
-
-main section.search .search-tab label:hover {
-  color: #888;
-  cursor: pointer;
-}
-
-main section.search .search-tab input:checked + label {
-  border: 1px solid var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  padding: 11px 78px;
-  /*border-top-left-radius: 17px*/
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
-  display: block;
-}
-
 main section.search .search-tab .box-bottom-info-content1 {
-  /*border: 1px solid #CCC;*/
   padding: 10px;
-  display: none;
 }
+main section.search .search-tab .box-bottom-info-content1 label{
 
+}
 main section.search .search-tab .box-bottom-info-content1 > div > div {
   padding: 10px;
   background-color: #EEEDF2;
@@ -88,11 +43,6 @@ main section.search .search-tab form button {
 main section.search .search-tab form button:hover {
   background-color: var(--theird-color);
 }
-main section.search .search-tab .box-bottom-info-content2 {
-  /*border: 1px soli d #CCC;*/
-  padding: 10px;
-  display: none;
-}
 main section.search form input,main section.search form select{
   border-radius: 0;
   border: 0;
@@ -100,7 +50,15 @@ main section.search form input,main section.search form select{
 main section.search form input[type="date"], main section.search form select{
   padding-bottom: 4px;
 }
+/* Start filter */
+main section.filter {
+  text-align: right;
+  display: none;
+}
+main section.filter button {
 
+}
+/* End filter */
 /* Start List */
 main section.list{
 	
@@ -109,8 +67,8 @@ main section.list .row{
 	margin:0;
 }
 main section.list .search-bar{
-	height: 1900px;
-  padding-left: 0
+  padding-left: 0;
+  margin-bottom: 10px
 }
 main section.list .search-bar .affiner{
   background-color: var(--primary-color);
@@ -422,6 +380,7 @@ main section.list .list-hotel .hotel .center{
 main section.list .list-hotel .hotel .center h1{
   text-transform: uppercase;
   margin-bottom: 0;
+  font-size: 23px;
 }
 main section.list .list-hotel .hotel .center .etoile{
   
@@ -444,6 +403,7 @@ main section.list .list-hotel .hotel .center .info-room .left i{
 }
 main section.list .list-hotel .hotel .center .info-room .left span{
   text-align: right;
+  font-size: 13px
 }
 main section.list .list-hotel .hotel .center .adresse{
   font-size: 11px
@@ -495,4 +455,92 @@ main section.list .list-hotel .hotel .right .inside button{
 main section.list .list-hotel .hotel .right .inside button:hover{
   color: var(--secondary-color);
   background-color: var(--primary-color);
+}
+/* Responsive Mobile */
+@media (max-width: 575.98px) {
+  /* Start Boostrap */
+  /* End Boostrap */
+  main section.search .search-tab .box-bottom-info-content1 label{
+    display: block;
+    text-align: center;
+  }
+  main section.search .search-tab form button {
+    display: block;
+    margin: auto;
+  }
+  main section.list .search-bar .affiner {
+    padding: 19px 3px;
+  }
+  main section.list .search-bar .affiner h3 {
+    font-size: 15px;
+  }
+  main section.list .list-hotel .trier .etablissement {
+    text-align: center;
+  }
+  main section.list .list-hotel .trier .trier-select {
+    margin-bottom: 7px;
+  }
+  main section.list .list-hotel .trier .trier-select span {
+    display: block;
+    text-align: center;
+  }
+  main section.list .list-hotel .trier .trier-select select {
+    display: block;
+    margin: auto;
+  }
+  main section.list .list-hotel .trier .bars {
+    text-align: center;
+  }
+  main section.list .list-hotel .hotel .center {
+    text-align: center;
+  }
+  main section.list .list-hotel .hotel .center h1{
+
+  }
+  main section.list .list-hotel .hotel .center .bookmarks {
+    display: none;
+  }
+  main section.list .list-hotel .hotel .right .inside {
+    padding: 0 0 77px 5px
+  }
+  main section.list .list-hotel .hotel .center .info-room .left {
+    margin-bottom: 5px;
+  }
+}
+/* Responsive Tablet */
+@media (max-width: 991.98px) {
+  .navbar-light .navbar-nav .nav-link {
+    line-height: 47px;
+  }
+  header section.bottom-header nav {
+    padding-top: 18px
+  }
+  main section.filter {
+    display: block;
+    padding-bottom: 5px;
+    text-align: center;
+    z-index: 999
+  }
+  main section.filter button {
+    background-color: #FCDC12;
+    border: 1px solid #e1a2a2;
+    padding: 3px 15px;
+    border-radius: 14%;
+    color: #953838;
+    box-shadow: -1px 1px 4px 1px rgba(176, 169, 169, 0.7);
+    font-style: italic;
+    cursor: pointer;
+    transition: color 2s linear;
+  }
+  main section.list .search-bar {
+    display: none;
+  }
+  main section.list .list-hotel .trier .etablissement {
+    text-align: center;
+    margin: 15px;
+    font-size: 25px
+  }
+  main section.list .list-hotel .hotel .center .info-room .left {
+    margin-bottom: 5px;
+  }
 }

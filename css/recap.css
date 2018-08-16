@@ -1,0 +1,143 @@
+@import url("helpers.css");
+
+main {
+  background-color: var(--pleinciel-main-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+main section.top {
+	background-color: var(--secondary-color);
+	padding: 23px 50px;
+}
+main section.top i{
+	font-size: 50px;
+}
+main section.bare {
+	padding: 23px 50px;
+	background-color: var(--secondary-color)
+}
+main section.bare .left {
+}
+main section.bare .left .identifiez {
+	margin-bottom: 10px
+}
+main section.bare .left .identifiez h1 {
+	background-color: var(--theird-color);
+	color: var(--secondary-color);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	padding: 10px 0;
+	margin: 0
+}
+main section.bare .left .identifiez .tabs {
+	background-color: #f4f4f4
+}
+/* Start tabs*/
+main section.bare .left .identifiez .tabs input[type=radio] {
+  display: none;
+}
+main section.bare .left .identifiez .tabs .label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 11px 78px;
+  font-weight: 600;
+  text-align: center;
+  color: #414042;
+  border-bottom: 1px solid #ddd;
+  width: 49%
+}
+main section.bare .left .identifiez .tabs .label i {
+	color: #414042;
+}
+main section.search .search-tab label {
+  text-transform: uppercase;
+}
+main section.bare .left .identifiez .tabs label:hover {
+  color: #888;
+  cursor: pointer;
+}
+main section.bare .left .identifiez .tabs input:checked + label {
+  border: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 11px 78px;
+  width: 50%
+}
+main section.bare .left .identifiez .tabs input:checked + label i{
+	color: var(--secondary-color);
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 {
+  padding: 10px;
+  display: none;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 > div > div {
+  padding: 10px;
+  background-color: #EEEDF2;
+  box-shadow: 2px 2px 2px #dedede;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 .column1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 6px;
+  margin-bottom: 6px;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 form {
+
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 form label {
+	color: #000;
+	font-weight: bold;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 form input {
+	border-radius: 0;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 form select {
+	border-radius: 0;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content1 form button{
+	background-color: var(--theird-color);
+	border-radius: 0;
+	border: 0
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content2 {
+  padding: 10px;
+  display: none;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content2 form {
+
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content2 form label {
+	color: #000;
+	font-weight: bold;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content2 form input {
+	border-radius: 0;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content2 form select {
+	border-radius: 0;
+}
+main section.bare .left .identifiez .tabs .box-bottom-info-content2 form button{
+	background-color: var(--theird-color);
+	border-radius: 0;
+	border: 0
+}
+/* End tabs*/
+main section.bare .left .identifiez .inscrivez-facebook {
+	background-color: #eae6e5;
+	padding: 33px;
+	text-align: center;
+}
+main section.bare .left .identifiez .inscrivez-facebook button{
+	border:0;
+}
+main section.bare .right {
+}

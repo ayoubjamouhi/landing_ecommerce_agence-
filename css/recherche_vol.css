@@ -10,6 +10,22 @@ main {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+main section.filter {
+  text-align: center;
+  display: none;
+  padding-bottom: 5px;
+}
+main section.filter button {
+  background-color: #FCDC12;
+  border: 1px solid #e1a2a2;
+  padding: 3px 15px;
+  border-radius: 14%;
+  color: #953838;
+  box-shadow: -1px 1px 4px 1px rgba(176, 169, 169, 0.7);
+  font-style: italic;
+  cursor: pointer;
+  transition: color 2s linear;
+}
 main section.search {
   margin: 10px 0;
 }
@@ -331,37 +347,22 @@ main section.list .list-vol .trier .bars{
   padding: 0;
 }
 main section.list .list-vol .vol {
-
+  margin-top: 10px
 }
-main section.list .list-vol .vol .top{
+main section.list .list-vol .vol .top {
   background-color: var(--pleinciel-liste-top-color);
-  margin-top: 44px;
-  padding: 28px 10px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
   border-top: 3px dotted #bec1c2;
   border-bottom: 3px dotted #bec1c2;
 }
-main section.list .list-vol .vol .top .logo {
-  
-}
-main section.list .list-vol .vol .top .logo i{
+main section.list .list-vol .vol .top .prix {
   color: var(--rose-star-color);
-  font-size: 30px
-}
-main section.list .list-vol .vol .top .trajet {
-  
-}
-main section.list .list-vol .vol .top .trajet h4{
+  font-size: 25px;
   font-weight: bold
 }
-main section.list .list-vol .vol .top .date {
-  
-}
-main section.list .list-vol .vol .top .date h5 {
-  padding-top: 3px;
-}
-main section.list .list-vol .vol .top .aller-retour {
-  color: var(--rose-star-color);
-  font-size: 21px;    
+main section.list .list-vol .vol .top .prix span {
+  font-size: 15px
 }
 main section.list .list-vol .vol .center-top {
   background-color: var(--secondary-color);
@@ -376,10 +377,52 @@ main section.list .list-vol .vol .center-bottom {
   color: #666666;
   padding: 15px 3px;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 11px;
   border-bottom: 2px dotted #bec1c2;
   cursor: pointer;
 }
+main section.list .list-vol .vol .center-bottom .depart {
+  padding: 1px;
+}
+main section.list .list-vol .vol .center-bottom .date {
+  
+}
+main section.list .list-vol .vol .center-bottom .direct {
+  color: var(--rose-star-color);
+}
+main section.list .list-vol .vol .center-bottom .direct .aller{
+  padding-top: 5px;
+}
+main section.list .list-vol .vol .center-bottom .direct .retour{
+  padding-top: 16px;
+}
+main section.list .list-vol .vol .center-bottom .heure {
+
+}
+main section.list .list-vol .vol .center-bottom .heure .aller{
+  padding-top: 5px;
+}
+main section.list .list-vol .vol .center-bottom .heure .retour{
+  padding-top: 16px;
+}
+
+main section.list .list-vol .vol .center-bottom .choisir{
+}
+main section.list .list-vol .vol .center-bottom .choisir button{
+  margin-top: 18px;
+  background-color: #FCDC12;
+  border: 1px solid #e1a2a2;
+  padding: 3px 15px;
+  border-radius: 14%;
+  color: #953838;
+  box-shadow: -1px 1px 4px 1px rgba(176, 169, 169, 0.7);
+  font-style: italic;
+  cursor: pointer;
+  transition: color 2s linear
+} 
+main section.list .list-vol .vol .center-bottom .choisir button:hover{
+  color: red;
+}     
 main section.list .list-vol .vol .center-bottom:hover {
   background-color: #d8ebf5;
 }
@@ -396,4 +439,40 @@ main section.list .list-vol .vol .total .prix span{
   font-size: 15px
 }
 /* End Right list */
-
+/* Responsive Mobile */
+@media (max-width: 575.98px) {
+  /* Start Boostrap */
+  /* End Boostrap */
+  main section.filter {
+    display: block;
+  }
+  main section.list .search-bar .affiner {
+    padding: 10px;
+  }
+  main section.list .search-bar .affiner h3 {
+    font-size: 15px
+  }
+  main section.list .search-bar{
+    display: none;
+    z-index: 999
+  }
+  main section.list .list-vol .vol .center-bottom {
+    font-size: 8px;
+    padding: 6px 0;
+  }
+  main section.list .list-vol .vol .center-bottom .compagnie {
+    padding-bottom: 12px
+  }
+  main section.list .list-vol .vol .center-bottom .depart {
+    padding: 1px;
+  }
+  main section.list .list-vol .vol .center-bottom .depart i{
+    color: var(--rose-star-color);
+  }
+  main section.list .list-vol .vol .center-bottom .choisir {
+    text-align: center;
+  }
+  main section.list .list-vol .vol .center-bottom .choisir button {
+    margin-top: 0
+  }
+}

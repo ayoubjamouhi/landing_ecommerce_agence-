@@ -18,7 +18,6 @@ main section.search .search-tab {
 main section.search .search-tab input[type=radio] {
   display: none;
 }
-
 main section.search .search-tab .label {
   display: inline-block;
   margin: 0 0 -1px;
@@ -29,20 +28,16 @@ main section.search .search-tab .label {
   border-bottom: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }
-
 main section.search .search-tab .label i {
   color: var(--secondary-color);
 }
-
 main section.search .search-tab label {
   text-transform: uppercase;
 }
-
 main section.search .search-tab label:hover {
   color: #888;
   cursor: pointer;
 }
-
 main section.search .search-tab input:checked + label {
   border: 1px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
@@ -51,7 +46,6 @@ main section.search .search-tab input:checked + label {
   padding: 11px 78px;
   /*border-top-left-radius: 17px*/
 }
-
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
@@ -59,26 +53,22 @@ main section.search .search-tab input:checked + label {
 #tab5:checked ~ #content5 {
   display: block;
 }
-
 main section.search .search-tab .box-bottom-info-content1 {
   /*border: 1px solid #CCC;*/
   padding: 10px;
   display: none;
 }
-
 main section.search .search-tab .box-bottom-info-content1 > div > div {
   padding: 10px;
   background-color: #EEEDF2;
   box-shadow: 2px 2px 2px #dedede;
 }
-
 main section.search .search-tab .box-bottom-info-content1 .column1 {
   display: grid;
   grid-template-columns: 3fr 1fr 1fr;
   grid-gap: 6px;
   margin-bottom: 6px;
 }
-
 main section.search .search-tab form button {
   background-color: var(--fourty-color);
   border: 0;
@@ -88,7 +78,6 @@ main section.search .search-tab form button:hover {
   background-color: var(--theird-color);
 }
 main section.search .search-tab .box-bottom-info-content2 {
-  /*border: 1px soli d #CCC;*/
   padding: 10px;
   display: none;
 }
@@ -231,62 +220,33 @@ main section.meilleurs-ventes .ventes-items .ventes-row .prix span.number {
     line-height: 50px;
     text-align: center;
   }
-
   /* End Boostrap */
-  header section.top-header .top-bar {
-    display: none;
-  }
-
-  header section.bottom-header .logo {
-    float: right;
-  }
-
-  header section.bottom-header .logo img {
-    width: 100%;
-  }
-
-  header section.bottom-header nav {
-    float: right;
-    width: 100%;
-  }
-
   main section.search .search-tab form button {
     display: block;
     margin: auto;
   }
-
   main section.search .search-tab label {
     text-align: center;
     display: block;
   }
-
   main section.coups-de-coeur h3 {
     text-align: center;
   }
-
   main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row {
     margin-bottom: 5px;
   }
-
   main section.coups-de-coeur .coups-de-coeur-items .coups-de-coeur-row .titre {
     font-size: 21px;
   }
-
   main section.meilleurs-ventes h3 {
     text-align: center;
     font-size: 19px;
   }
-
   main section.meilleurs-ventes .ventes-items .ventes-row {
     margin-bottom: 5px;
   }
-
   main section.meilleurs-ventes .ventes-items .ventes-row .titre {
     font-size: 21px;
-  }
-
-  footer section.top-footer h4 {
-    text-align: center;
   }
 }
 /* Responsive Tablet */
