@@ -19,7 +19,7 @@ main section.bare {
 main section.bare .left {
 }
 main section.bare .left .identifiez {
-	margin-bottom: 10px
+	margin-bottom: 40px
 }
 main section.bare .left .identifiez h1 {
 	background-color: var(--theird-color);
@@ -31,7 +31,7 @@ main section.bare .left .identifiez h1 {
 	margin: 0
 }
 main section.bare .left .identifiez .tabs {
-	background-color: #f4f4f4
+	background-color: var(--pleinciel-main-color)
 }
 /* Start tabs*/
 main section.bare .left .identifiez .tabs input[type=radio] {
@@ -139,5 +139,157 @@ main section.bare .left .identifiez .inscrivez-facebook {
 main section.bare .left .identifiez .inscrivez-facebook button{
 	border:0;
 }
+/* Start Info passagers */
+main section.bare .left .info-passagers {
+	margin-bottom: 40px;
+}
+main section.bare .left .info-passagers h1 {
+	background-color: var(--theird-color);
+	color: var(--secondary-color);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	padding: 10px 0;
+	margin: 0
+}
+main section.bare .left .info-passagers .passagers {
+	background-color: var(--pleinciel-main-color);
+	padding: 7px 13px;
+}
+/* End Info passagers */
+
+/* Start conditions génerales */
+main section.bare .left .condition-generale {
+	margin-bottom: 40px;
+}
+main section.bare .left .condition-generale h1 {
+	background-color: var(--theird-color);
+	color: var(--secondary-color);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	padding: 10px 0;
+	margin: 0
+}
+/* End conditions génerales */
+/* Start mode paiement */
+main section.bare .left .mode-paiement {
+	margin-bottom: 40px;
+}
+main section.bare .left .mode-paiement h1 {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+	padding: 10px 0;
+	margin: 0
+}
+main section.bare .left .mode-paiement .top {
+	padding: 7px 13px;
+	background-color: var(--pleinciel-main-color)
+}
+main section.bare .left .mode-paiement .top button {
+	background-color: var(--theird-color);
+	border-radius: 0;
+	border: 0;
+	padding: 12px;
+	color: var(--secondary-color);
+	cursor: pointer;
+	margin-bottom: 15px;
+}
+main section.bare .left .mode-paiement .top .securite {
+	padding-left: 10px;
+
+}
+main section.bare .left .mode-paiement .top .securite > div {
+}
+main section.bare .left .mode-paiement .top .securite > div span {
+	color:  #000;
+	font-weight: bold;
+}
+main section.bare .left .mode-paiement .top .securite button i{
+
+}
+/* End mode paiement */
+/* Start condition */
+main section.bare .left .condition {
+
+}
+main section.bare .left .condition .buttons{
+	margin-top: 10px;
+}
+main section.bare .left .condition .buttons .retour{
+	background-color: var(--primary-color);
+	border-radius: 0;
+	border: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 8px 8px;
+}
+main section.bare .left .condition .buttons .reserver{
+	background-color: var(--theird-color);
+	border-radius: 0;
+	border: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 8px 8px;
+}
+/* End condition */
 main section.bare .right {
+}
+main section.bare .right .info-vol {
+
+}
+main section.bare .right .info-vol h1{
+	background-color: var(--theird-color);
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 10px 0;
+    margin: 0;	
+}
+main section.bare .right .info-vol .info {
+	background-color: var(--pleinciel-main-color);
+	margin-bottom: 15px;
+}
+main section.bare .right .info-vol .info .depart{
+	padding: 10px 15px;
+}
+main section.bare .right .info-vol .info .depart h3{
+	text-transform: uppercase;
+	color: var(--primary-color);
+	font-size: 15px;
+	font-weight: bold;
+}
+main section.bare .right .info-vol .info .depart label{
+	color: #8f8b8b;
+	display: block;
+	padding-left: 10px;
+}
+main section.bare .right .info-vol .info button {
+	width: 100%;
+	padding: 20px;
+	border: 0;
+	background-color: var(--theird-color);
+	cursor: pointer;
+	color: #fff;
+	text-transform: uppercase;
+}
+main section.bare .right .info-vol .info button span {
+	font-weight: bold;
+	font-size: 23px;
+}
+main section.bare .right .appel {
+	background-color: var(--pleinciel-main-color);
+	padding: 15px;
+}
+main section.bare .right .appel label{
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+main section.bare .right .appel span{
+	background-color: var(--pleinciel-main-color)
 }
