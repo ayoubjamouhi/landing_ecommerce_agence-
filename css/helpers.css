@@ -97,10 +97,11 @@ header section.bottom-header .logo{
 	float: left;
 }
 header section.bottom-header .logo img{
-	max-height: 113px;
-	width: 62%;
-	height: 90px;
-	float: right;
+	width: 52%;
+    height: 84px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 23px;
 }
 header section.bottom-header nav{
 	width: 75%;
@@ -224,7 +225,22 @@ footer .bottom-footer ul.social-box li a:hover{
   footer section.top-footer h4 {
     text-align: center;
   }
+  footer section.top-footer p {
+  	text-align: center;
+  }
   footer .top-footer .form-top-footer .input-top-footer input[type="text"] {
   	min-width: 284px
   }
+}
+@media (max-width: 1199.98px) {
+	.navbar-light .navbar-nav .nav-link {
+		font-size: 14px;
+		padding: 0 17px;
+	}
+}
+@media (min-width: 1400px) {
+	.navbar-light .navbar-nav .nav-link {
+		font-size: 14px;
+		padding: 0 17px;
+	}
 }

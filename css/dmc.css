@@ -47,10 +47,22 @@ main .top-main form label i{
 main .top-main form input{
 	border-radius: 0
 }
+main .top-main form textarea {
+	border-radius: 0
+}
 main .top-main form button{
 	background-color: var(--h3-color);
 	border: 0
 }
 /* End Main */
-
+/* Responsive Mobile */
+@media (max-width: 575.98px) {
+	main .top-main {
+		padding: 0;
+		padding-top: 5px;
+	}
+	main .top-main .form-contact {
+		padding: 9px;
+	}
+}
 /*# sourceMappingURL=apropos.css.map */
