@@ -45,7 +45,8 @@ main section.bare .left .identifiez .tabs .label {
   text-align: center;
   color: #414042;
   border-bottom: 1px solid #ddd;
-  width: 49%
+  width: 49%;
+  text-transform: uppercase;
 }
 main section.bare .left .identifiez .tabs .label i {
 	color: #414042;
@@ -63,7 +64,8 @@ main section.bare .left .identifiez .tabs input:checked + label {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   padding: 11px 78px;
-  width: 50%
+  width: 50%;
+  text-transform: uppercase;
 }
 main section.bare .left .identifiez .tabs input:checked + label i{
 	color: var(--secondary-color);
@@ -284,12 +286,31 @@ main section.bare .right .info-vol .info button span {
 main section.bare .right .appel {
 	background-color: var(--pleinciel-main-color);
 	padding: 15px;
+	margin-bottom: 15px;
 }
 main section.bare .right .appel label{
 	text-transform: uppercase;
 	display: block;
 	text-align: center;
+	font-weight: bold
 }
-main section.bare .right .appel span{
-	background-color: var(--pleinciel-main-color)
+main section.bare .right .appel span {
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+main section.bare .right .paiement {
+	background-color: var(--pleinciel-main-color);
+	padding: 15px;
+}
+main section.bare .right .paiement label{
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	font-weight: bold
+}
+main section.bare .right .paiement div {
+	text-align: center;
 }
