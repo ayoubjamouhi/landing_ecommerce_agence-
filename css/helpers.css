@@ -3,6 +3,7 @@
 	--primary-color: #9EDEFF;
 	--secondary-color: #FFF;
 	--header-color: #723455;
+	--header-back-color: #000;
 	--theird-color: rgb(183, 144, 186);
 	--fourty-color: #444d4ccf;
 	--search-color: #5b57555c;
@@ -38,7 +39,7 @@
 	background:none !important;
 }
 .navbar-light .navbar-nav .nav-link{
-	color: var(--header-color);
+	color: var(--secondary-color);
 	text-transform: uppercase;
 	cursor: pointer;
 	font-size: 16px;
@@ -71,10 +72,10 @@ a{
 	text-decoration: none;
 }
 header{
-	background-color: var(--primary-color);
-	/*position: fixed;
+	background-color: var(--header-back-color);
+	position: fixed;
 	width: 100%;
-	z-index: 99*/
+	z-index: 99;
 }
 header section.top-header{
 	
